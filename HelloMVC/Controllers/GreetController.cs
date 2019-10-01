@@ -12,6 +12,7 @@ namespace HelloMVC.Controllers
         public ViewResult Index(string name)
         {
             var model = new GreetingModel();
+            model.Name = name;
             return View(model);
         }
     }
